@@ -10,7 +10,7 @@
       </div>
       <section class="grid_4">
         <h2>Products</h2>
-        <p>We are proud to announce the arrival of the 2012 Commodity Reference Manual. Over 60 of the most common fruits and vegetables. This manual is packed full of information in a pocket-sized and durable design.</p>
+        <p>Check out the Commodity Reference Manual. Over 60 of the most common fruits and vegetables. This manual is packed full of information in a pocket-sized and durable design.</p>
         <a href="/produce-inspection-products" class="learnmore">Learn More <span>>></span></a>
       </section>
       <section class="grid_4">
@@ -25,7 +25,7 @@
       </section>
       <section class="grid_12 watermelon_container">
         <blockquote>When I began my produce inspection career, in 1976, I never envisioned over 30 years later I would be in a position to teach others using my produce experience.</blockquote>
-        <cite><a href="/company/about-us">Tom Yawman</a>, Founder of International Produce Training</cite>
+        <cite><a href="/company/about">Tom Yawman</a>, Founder of International Produce Training</cite>
       </section>
       <section class="grid_4">
         <h2>Inspectors' Blog</h2>
@@ -40,7 +40,9 @@
                     <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                 </li>
             <?php endforeach; ?>
+                <li><a href="/produce-inspection-resources/inspectors-blog" ><em>View All Blog Posts</em></a></li>
             </ul>
+            
         </nav>
         <hr class="separator" />
         <nav>
