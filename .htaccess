@@ -12,7 +12,7 @@ RewriteRule ^/?commodity-reference-manual$ /produce-inspection-products/commodit
 RewriteRule ^/?about$ /company/about [R=301,L]
 RewriteRule ^/?privacy-policy$ /company/privacy-policy [R=301,L]
 RewriteRule ^/?terms-of-service$ /company/terms-of-service [R=301,L]
-RewriteRule ^/?faqs$ /produce-inspection-resources/faq [R=301,L]
+RewriteRule ^/?faqs$ /produce-inspection-resources/faqs [R=301,L]
 RewriteRule ^/?inspection-quiz$ /produce-inspection-resources/inspection-quiz [R=301,L]
 RewriteRule ^/?audit-services$ /produce-inspection-services/audit-services [R=301,L]
 RewriteRule ^/?training-courses$ /produce-inspection-services/onsite-training-courses [R=301,L]
