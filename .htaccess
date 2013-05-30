@@ -17,6 +17,7 @@ RewriteRule ^/?inspection-quiz$ /produce-inspection-resources/inspection-quiz [R
 RewriteRule ^/?audit-services$ /produce-inspection-services/audit-services [R=301,L]
 RewriteRule ^/?training-courses$ /produce-inspection-services/onsite-training-courses [R=301,L]
 RewriteRule ^/?inspectors-blog$ /produce-inspection-resources/inspectors-blog [R=301,L]
+RewriteRule ^/?inspection-guidelines$ /produce-inspection-resources/inspection-guidelines [R=301,L]
 
 RewriteRule ^/?inspection-guidelines/(.*)$ /produce-inspection-resources/inspection-guidelines/$1 [R=301,L]
 RewriteRule ^/?current-events/(.*)$ /produce-inspection-resources/inspectors-blog/current-events/$1 [R=301,L]
