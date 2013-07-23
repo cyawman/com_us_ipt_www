@@ -3,11 +3,7 @@
   <head profile="http://gmpg.org/xfn/11">
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <title><?php wp_title('|',true,'right'); ?> <?php bloginfo('name'); ?></title>
-    <script src="/wp-content/themes/ipt/js/jquery-1.7.1.js" type="text/javascript"></script>
-    <script src="/wp-content/themes/ipt/js/ipt.js" type="text/javascript"></script>
-    <!--[if lte IE 8]>
-    <script src="/wp-content/themes/ipt/js/html5.js" type="text/javascript"></script>
-    <![endif]-->
+    
     <link rel="stylesheet" href="/wp-content/themes/ipt/css/reset.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/wp-content/themes/ipt/css/text.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/wp-content/themes/ipt/css/960_12_col.css" type="text/css" media="screen" />
@@ -18,6 +14,21 @@
   </head>
   <body>
     <header class="container_12" id="header_container">
+        <nav class="social">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript">
+            lang: en_US
+           </script>
+           <script type="IN/FollowCompany" data-id="3117218" data-counter="none"></script>
+           
+        </nav>
+        <nav class="site-search">
+            <form method="GET" action="/">
+                <fieldset>
+                    <input type="text" value="" name="s" id="query" placeholder="Site Search">
+                    <input type="submit" value="Search">
+                </fieldset>
+            </form>
+        </nav>
       <hgroup class="grid_12">
         <h1><a href="/"><img src="/wp-content/themes/ipt/img/header-logo.jpg" alt="International Produce Training" /></a></h1>
       </hgroup>
