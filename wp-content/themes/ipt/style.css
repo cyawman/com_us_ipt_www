@@ -35,6 +35,10 @@ a:hover {text-decoration:underline;}
 #header_container .nav li.active {background:#444 none;}
 #header_container .nav li.active a {color:#FFF;}
 
+#header_container .site-search {position:absolute; top:70px; right:0;}
+#header_container .social {position:absolute; top:40px; right:0;}
+#header_container .social .rss-feed {color:#444; font-weight:bold; font-size:11px;}
+
 /**
  * Page container includes the sitewide styles for all page types.
  *
@@ -104,6 +108,17 @@ a:hover {text-decoration:underline;}
 #single_page_container .post {margin-bottom:20px;}
 #single_page_container .postmetadata {background-color:#efefef; border-top:1px solid #CCCCCC; border-bottom:1px solid #CCCCCC; padding:5px;}
 #single_page_container .postmetadata p {font-size:10px; margin:0; padding:0;}
+
+/**
+ * Components used to make complex elements
+ *
+ * =cmp
+ */
+#page_container .callout_box {background-color:#444; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+#page_container .callout_box p {margin: 0 20px; font-size: 14px; color: #eee; line-height: 1.2;}
+#page_container .callout_box p.callout_title {margin: 20px 20px 10px; font-size: 20px; font-weight: bold; color: #fff; line-height: 1;}
+#page_container .callout_box .action {float: left; margin: 10px 20px;}
+#page_container .callout_box .action a {padding: 5px 15px; font-size: 16px; color: #fff; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); border: 1px solid #CC3F25; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #CC3F25; background-image: linear-gradient(bottom, rgb(204,63,37) 0%, rgb(246,79,37) 100%); background-image: -o-linear-gradient(bottom, rgb(204,63,37) 0%, rgb(246,79,37) 100%); background-image: -moz-linear-gradient(bottom, rgb(204,63,37) 0%, rgb(246,79,37) 100%); background-image: -webkit-linear-gradient(bottom, rgb(204,63,37) 0%, rgb(246,79,37) 100%); background-image: -ms-linear-gradient(bottom, rgb(204,63,37) 0%, rgb(246,79,37) 100%); background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(204,63,37)),color-stop(1, rgb(246,79,37))); cursor: pointer;}
 
 /**
  * Footer container includes the styles for the sitewide footer container.

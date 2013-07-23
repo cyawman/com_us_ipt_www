@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<div id="content-wrapper">
-  <div id="content" class="narrowcolumn" role="main">
-  	<?php if (have_posts()) : ?>
+<div class="container_12" id="page_container">
+  <div class="grid_8">
+    <?php if (have_posts()) : ?>
   		<?php while (have_posts()) : the_post(); ?>
   			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
   				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
@@ -10,8 +10,6 @@
   					<?php the_excerpt(); ?>
   					<p><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?> ">Continue reading about <?php the_title_attribute(); ?> &raquo;</a><p>
   				</div>
-  				<p><?php edit_post_link('Edit', '', ' | '); ?></p>
-  				
   			</div>
   		<?php endwhile; ?>
   		<?php comments_template(); ?>
@@ -25,9 +23,8 @@
   		<?php get_search_form(); ?>
   	<?php endif; ?>
   </div>
-  <div id="sidebar">
+  <div class="grid_4 sidebar_container">
     <?php get_sidebar(); ?>
   </div>
-  <div class="clr"></div>
 </div>
 <?php get_footer(); ?>
