@@ -1,6 +1,6 @@
     <footer class="container_12" id="footer_container">
       <div class="grid_12">
-        <p>Copyright &copy; 2012 <a href="/company">International Produce Training</a>. All Rights Reserved.</p>
+        <p>Copyright &copy; <?php echo date('Y'); ?> <a href="/company">International Produce Training</a>. All Rights Reserved.</p>
         <p><a href="/company/privacy-policy">Privacy Policy</a> | <a href="/company/terms-of-service">Terms of Service</a></p>      
       </div>
       <script type="text/javascript">
