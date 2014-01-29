@@ -66,6 +66,7 @@
         <hr class="separator" />
         <h3>Choose the Location</h3>
         <p>Unlike other produce inspection training programs, International Produce Training travels to your place of business and teaches your staff a personalized curriculum based on your business needs.</p>
+        <a href="http://training.ipt.us.com" class="learnmore">Login <span>>></span></a>
       </section>
     </div>
 </div>
