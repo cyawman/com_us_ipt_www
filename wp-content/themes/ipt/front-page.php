@@ -60,13 +60,14 @@
         <a href="/produce-inspection-products/commodity-reference-manual" class="learnmore">Learn More <span>>></span></a>
       </section>
       <section class="grid_4">
-        <h2>Onsite Training</h2>
+        <h2>Online Training</h2>
         <h3>Choose the Commodities</h3>
         <p>International Produce Training offers personalized fresh produce inspection training courses for your staff. The instruction design will include training on only the commodities you feel are needed.</p>
         <a href="http://training.ipt.us.com" class="learnmore">Login <span>>></span></a>
         <br />
         <br />
         <hr class="separator" />
+        <h2>Onsite Training</h2>
         <h3>Choose the Location</h3>
         <p>Unlike other produce inspection training programs, International Produce Training travels to your place of business and teaches your staff a personalized curriculum based on your business needs.</p>
       </section>
