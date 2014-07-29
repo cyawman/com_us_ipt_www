@@ -1,4 +1,10 @@
 <?php
+  $domain = explode('@', $_REQUEST['email']);
+  if($domain[1] == 'ip-10-158-40-78.ec2.internal'){
+    header( "Location: http://www.ipt.us.com/contact-us/thank-you?success=true" );
+  }else{
+
+
   $firstname = $_REQUEST['firstname'];
   $lastname = $_REQUEST['lastname'];
   $phone = $_REQUEST['phone'];
@@ -8,5 +14,6 @@
   $mail_message = "$firstname $lastname\n$phone\n$email\n$message";
 
   mail( "cyawman@gmail.com, tyawman@ipt.us.com", "IPT Contact Form ", $mail_message, "From: $email" );
-  header( "Location: http://www.ipt.us.com/contact-us/thank-you?firstname=$firstname&amp;lastname=$lastname&amp;phone=$phone&amp;email=$email" );
+  header( "Location: http://www.ipt.us.com/contact-us/thank-you" );
+}
 ?>
