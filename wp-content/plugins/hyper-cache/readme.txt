@@ -1,58 +1,46 @@
 === Hyper Cache ===
-Tags: cache,chaching,speed,performance,super cache,wp cache,optimization,staticization
+Tags: cache,performance,staticizer,apache,htaccess,tuning,speed,bandwidth,optimization,tidy,gzip,compression,server load,boost
 Requires at least: 2.5
-Tested up to: 3.3.1
+Tested up to: 4.1
 Stable tag: trunk
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2545483
-Contributors: satollo,momo360modena
+Donate link: http://www.satollo.net/donations
+Contributors: satollo
 
-Hyper Cache is flexible and easy to configure cache system for WordPress.
+Hyper Cache is a performant and easy to configure cache system for WordPress.
 
 == Description ==
 
-Hyper Cache is a new cache system for WordPress, specifically written for
-people which have their blogs on low resources hosting provider 
-(cpu and mysql). It works even with hosting based on Microsoft IIS (just tuning
-the configuration). It has three invalidation method: all the cache, single post
-based and nothing but with control on home and archive pages invalidation.
+Hyper Cache is a cache plugin specifically written to get the maximum
+speed for your WordPress blog. It can be used in low resources hosting as well
+on high end servers.
 
-It has not yet tested for multisite configuration (WordPress 3.0 feature).
+Hyper Cache is purely PHP and works on every blog: no complex configurations are need
+and when you deactivate it no stale setting are left floating around.
 
-Some features:
+Short list of features:
 
-* compatible with the plugin wp-pda which enables a blog to be *accessible from mobile devices*
-* manages (both) *plain and gzip compressed pages*
-* autoclean system to reduce the disk usage
-* 404 caching
-* redirects caching
-* easy to configure
-* Global Translator compatibility
-* Last Modified http header compatibility with 304 responses
-* compressed storage to reduce the disk space usage
-* agents, urls and cookies based rejection configurable
-* easy to integrated with other plugins
+* Mobile aware: double cache for desktop and mobile site versions
+* Mobile theme switch option: change the theme on mobile device detection
+* Able to serve expired pages to bots to increase the perceived speed by bots
+* Manages compression even on the fly for non cached pages
+* Lots of configurable bypasses: matching cookies, matching urls, user agents, ...
+* Comments aware: is able to serve cached pages even to visitors who commented the blog (perfect for
+blog with great readers paritipation)
+* Cache folder can be moved outside your blog space to exclude it from backups
+* Controls over cache cleaning on blog events (post edited, comments, ...)
+* Autoclean to controls the cache used disk space
+* CDN support (experimental)
+* Other special options
+* Response header signature to check the working status
 
-More can be read on the [official plugin page](http://www.satollo.net/plugins/hyper-cache) and write me
-if you have issues to info@satollo.net.
+More can be read on the [Hyper Cache official page](http://www.satollo.net/plugins/hyper-cache).
 
-**Check out my other plugins**:
+Other plugins by Stefano Lissa:
 
-* [Post Layout](http://www.satollo.net/plugins/post-layout "Post Layout WordPress plugin: the easy way to enrich your posts")
-* [Comment Notifier](http://www.satollo.net/plugins/comment-notifier "Keep your blog discussions on fire")
-* [Feed Layout](http://www.satollo.net/plugins/feed-layout "Feed Layout WordPress plugin: the easy way to enrich your feed contents")
-* [Dynatags](http://www.satollo.net/plugins/dynatags "Dynatags WordPress plugin: Create your own custom short tag in seconds")
+* [Newsletter](http://www.thenewsletterplugin.com)
 * [Header and Footer](http://www.satollo.net/plugins/header-footer)
-* [Newsletter](http://www.satollo.net/plugins/newsletter)
+* [Include Me](http://www.satollo.net/plugins/include-me)
 
-Thanks to:
-
-* Amaury Balmer for internationalization and other modifications
-* Frank Luef for german translation
-* HypeScience, Martin Steldinger, Giorgio Guglielmino for test and bugs submissions
-* Ishtiaq to ask me about compatibility with wp-pda
-* Gene Steinberg to ask for an autoclean system
-* Marcis Gasun (fatcow.com) for Bielorussian translation
-* many others I don't remember
 
 == Installation ==
 
@@ -60,45 +48,109 @@ Thanks to:
 2. Go into the WordPress admin interface and activate the plugin
 3. Optional: go to the options page and configure the plugin
 
-Before upgrade DEACTIVATE the plugin and then ACTIVATE and RECONFIGURE!
-
 == Frequently Asked Questions ==
 
-See the [Hyper Cache official page](http://www.satollo.net/plugins/hyper-cache) 
-    
+See the [Hyper Cache official page](http://www.satollo.net/plugins/hyper-cache) or
+the [Hyper Cache official forum](http://www.satollo.net/forums/forum/hyper-cache-plugin).
+
 == Screenshots ==
 
-No screenshots are available.
+1. The main configuration panel
+
+2. Configuration of bypasses (things you want/not want to be cached)
+
+3. Mobile devices configuration
 
 == Changelog ==
 
-= 2.8.7 =
+= 3.1.8 =
 
-* Admin panel fixes
-* Introduced the text domain (re-trnslation needed)
+* Fixed the comment awaiting notification cached
 
-= 2.8.6 =
+= 3.1.7 =
 
-* Chinese translation by Ragnarok!
+* Added experimental support for CDN
+* Added on-the-fly compression
+* Fixed some headers
 
-= 2.8.5 =
+= 3.1.6 =
 
-* fixed the "is_home" warning issue
+* Fixed the post trashing detection
 
-= 2.8.4 =
+= 3.1.5 =
 
-* fixed the single page invalidation
+* Tidy option removed
 
-= 2.8.3 =
+= 3.1.4 =
 
-* fixed the clean from admin panel
+* Fixed an error log always active
 
-= 2.8.2 =
+= 3.1.3 =
 
-* moved the cache folder to wp-content/cache/hyper-cache
-* configuration panel has no more expandable sections
-* the cached pages are no more deleted on update
+* Fixed the agents bypass
+* Added the "serve expired pages to bots" options
+* Added the readfile/file_get_contents switch
+* Fixed the draft saving triggering a cache invalidation
+* Added distinct cache clean for home and archives
+* Added debug logging when HYPER_CACHE_LOG is true (define it on wp-config.php)
+* Fixed the + sign on comment author
 
-= 2.8.1 =
+= 3.1.2 =
 
-* fixed the Last Modified header (thanks Yuri C.)
+* Fixed comment author cookie clean
+
+= 3.1.1 =
+
+* fixed a PHP warning on options panel when clearing an empty cache
+* pot file added
+* possible fix for after update messages that saving is needed
+
+= 3.1.0 =
+
+* Fixed the cookie bypass
+* Removed a debug notice
+* Added HTTPS separated cache
+* Improved code performance
+
+= 3.0.6 =
+
+* readme.txt fix
+* WP 4.0 compatibility check
+* Fixed invalidation on draft saving
+
+= 3.0.5 =
+
+* Fixed analysis of URL with commas and dots
+* Improved the categories invalidation with /%category% permalink
+
+= 3.0.4 =
+
+* Help texts fixed
+
+= 3.0.3 =
+
+* Fixed the autoclean when max cached page age is set to 0
+* Changed a little the mobile agent list
+
+= 3.0.2 =
+
+* Added the browser caching option
+* Fixed a cache header
+* Fixed warning on cache size if empty
+
+= 3.0.1 =
+
+* Short description fix on plugin.php
+* Forum link fix on readme.txt
+* More help on comment authors option
+
+= 3.0.0 =
+
+* Totally rewritten to include the Lite Cache features
+
+= To Do =
+
+* Register an action to clean the cache by other plugin
+* Separated cache for https
+* Invalidation of categories paths when /%category%/%postname% is used
+

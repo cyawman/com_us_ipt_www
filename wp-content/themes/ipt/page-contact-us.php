@@ -11,14 +11,14 @@
       </nav>
       <div class="grid_8">
         <?php if (have_posts()) : ?>
-      		<?php while (have_posts()) : the_post(); ?>
-      			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+      	<?php while (have_posts()) : the_post(); ?>
+      	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
               <header>
                   <h2 class="title"><?php the_title(); ?></h2>
               </header>
-      				<div class="entry">
-      					<?php the_content('Read the rest of this entry &raquo;'); ?>
-      					<form action="/wp-content/themes/ipt/fragments/send-mail.php" method="post">
+      		<div class="entry">
+      		<?php the_content('Read the rest of this entry &raquo;'); ?>
+    		<form id="contact-form" action="" method="post">
                   <fieldset>
                     <label for="firstname">First Name</label>
                     <input type="text" name="firstname" size="25" required />
@@ -34,8 +34,8 @@
                     <input type="submit" name="submit" value="Send" size="20"  />
                   </fieldset>
                 </form>
-      				</div>
-      			</article>
+      		</div>
+      	</article>
       		<?php endwhile; ?>
       	<?php else : ?>
       	<?php endif; ?>
@@ -46,3 +46,9 @@
     </div>
 </div>
 <?php get_footer(); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+   $('form#contact-form').attr('action', '/wp-content/themes/ipt/fragments/send-contact-form.php');
+});
+</script>

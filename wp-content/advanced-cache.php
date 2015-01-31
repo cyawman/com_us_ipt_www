@@ -1,5 +1,5 @@
 <?php
-$hyper_cache_path = "/home/cyawman/com/us/ipt/www/wp-content/cache/hyper-cache/";
+$hyper_cache_path = '/data/www/com/us/ipt/www/wp-content/cache/hyper-cache/';
 $hyper_cache_charset = "UTF-8";
 $hyper_cache_comment = true;
 $hyper_cache_archive = true;
@@ -11,12 +11,15 @@ $hyper_cache_plugin_mobile_pack = false;
 $hyper_cache_feed = false;
 $hyper_cache_cache_qs = false;
 $hyper_cache_strip_qs = false;
-$hyper_cache_home = false;
+$hyper_cache_home = true;
 $hyper_cache_lastmodified = false;
+$hyper_cache_browsercache = false;
+$hyper_cache_nocache = false;
 $hyper_cache_gzip = true;
+$hyper_cache_gzip_on_the_fly = false;
 $hyper_cache_store_compressed = true;
 $hyper_cache_reject = false;
 $hyper_cache_reject_agents = false;
 $hyper_cache_reject_cookies = false;
-include(ABSPATH . 'wp-content/plugins/hyper-cache/cache.php');
+include(WP_CONTENT_DIR . '/plugins/hyper-cache/cache.php');
 ?>
