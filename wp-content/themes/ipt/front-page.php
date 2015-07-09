@@ -25,7 +25,8 @@
       </section>
       <section class="grid_12 watermelon_container">
         <blockquote>When I began my produce inspection career, in 1976, I never envisioned over 40 years later I would be in a position to teach others using my produce experience.</blockquote>
-        <cite><a href="/company/about">Tom Yawman</a>, Founder of International Produce Training</cite>
+        <cite><a href="/company/about#tom-yawman">Tom Yawman</a>, Founder of International Produce Training</cite>
+        <p>Read more <a href="/company/about">about the produce inspection trainers</a></p>
       </section>
       <section class="grid_4">
         <h2>Inspectors' Blog</h2>

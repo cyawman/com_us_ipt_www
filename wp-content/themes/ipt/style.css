@@ -78,6 +78,7 @@ a:hover {text-decoration:underline;}
 #front_page_container .watermelon_container {background:#EFEFEF url('/wp-content/themes/ipt/img/watermelon-bg.jpg') no-repeat scroll 0 0; position:relative; width:940px; height:239px; margin-top:30px; margin-bottom:30px;}
 #front_page_container .watermelon_container blockquote {background:transparent url('/wp-content/themes/ipt/img/quotation-mark.jpg') no-repeat scroll 0 0;display:block; width:550px; text-align:right; text-indent:70px; top:50px; left:350px; position:absolute; font-size:20px; font-style:italic; padding-top:15px;}
 #front_page_container .watermelon_container cite {display:block; top:170px; left:540px; position:absolute; font-size:14px;}
+#front_page_container .watermelon_container p {display: block; width: 320px; top: 200px; left: 580px; position: absolute; border-top: 1px solid #ccc; padding-top: 5px;}
 #front_page_container .crm_book_block {display:block; margin-bottom:20px; margin-left:30px;}
 
 /**
